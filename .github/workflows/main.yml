@@ -11,7 +11,6 @@ jobs:
           curl -OL https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-mac.zip
           unzip ninja-mac.zip
           mv ninja tools/bin
-          echo neat
       - run: tar -cJf tools.tar.xz tools/
       - uses: actions/upload-artifact@v3
         with:
